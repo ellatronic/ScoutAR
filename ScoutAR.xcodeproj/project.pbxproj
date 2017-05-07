@@ -1,0 +1,692 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4905CA6A1EAFFC58002CA57F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4905CA691EAFFC58002CA57F /* APIManager.swift */; };
+		4905CA6C1EAFFEF2002CA57F /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4905CA6B1EAFFEF2002CA57F /* Place.swift */; };
+		4905CA6E1EB117BF002CA57F /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4905CA6D1EB117BF002CA57F /* PlaceAnnotation.swift */; };
+		4905CA701EB12A99002CA57F /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4905CA6F1EB12A99002CA57F /* AnnotationView.swift */; };
+		490BBDF41EAFEE5D00F37467 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490BBDF31EAFEE5D00F37467 /* AppDelegate.swift */; };
+		490BBDF61EAFEE5D00F37467 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490BBDF51EAFEE5D00F37467 /* ViewController.swift */; };
+		490BBDF91EAFEE5D00F37467 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490BBDF71EAFEE5D00F37467 /* Main.storyboard */; };
+		490BBDFB1EAFEE5D00F37467 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 490BBDFA1EAFEE5D00F37467 /* Assets.xcassets */; };
+		490BBDFE1EAFEE5D00F37467 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490BBDFC1EAFEE5D00F37467 /* LaunchScreen.storyboard */; };
+		490BBE091EAFEE5D00F37467 /* ScoutARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490BBE081EAFEE5D00F37467 /* ScoutARTests.swift */; };
+		490BBE141EAFEE5D00F37467 /* ScoutARUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490BBE131EAFEE5D00F37467 /* ScoutARUITests.swift */; };
+		490BBE2A1EAFEF6F00F37467 /* ARAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490BBE231EAFEF6F00F37467 /* ARAnnotation.swift */; };
+		490BBE2B1EAFEF6F00F37467 /* ARAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490BBE241EAFEF6F00F37467 /* ARAnnotationView.swift */; };
+		490BBE2C1EAFEF6F00F37467 /* ARConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490BBE251EAFEF6F00F37467 /* ARConfiguration.swift */; };
+		490BBE2D1EAFEF6F00F37467 /* ARTrackingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490BBE261EAFEF6F00F37467 /* ARTrackingManager.swift */; };
+		490BBE2E1EAFEF6F00F37467 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490BBE271EAFEF6F00F37467 /* ARViewController.swift */; };
+		490BBE2F1EAFEF6F00F37467 /* DebugMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490BBE291EAFEF6F00F37467 /* DebugMapViewController.swift */; };
+		490BBE351EAFEF8400F37467 /* DebugMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 490BBE311EAFEF8400F37467 /* DebugMapViewController.xib */; };
+		490BBE361EAFEF8400F37467 /* hdar_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 490BBE321EAFEF8400F37467 /* hdar_close.png */; };
+		490BBE371EAFEF8400F37467 /* hdar_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 490BBE331EAFEF8400F37467 /* hdar_close@2x.png */; };
+		490BBE381EAFEF8400F37467 /* hdar_close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 490BBE341EAFEF8400F37467 /* hdar_close@3x.png */; };
+		492BAC721EBBEC26003E3390 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492BAC711EBBEC26003E3390 /* SettingsViewController.swift */; };
+		49434D501EB2859000760CA1 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49434D4F1EB2859000760CA1 /* WebViewController.swift */; };
+		49434D5B1EB3C85500760CA1 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49434D521EB3C85500760CA1 /* Montserrat-Black.ttf */; };
+		49434D5C1EB3C85500760CA1 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49434D531EB3C85500760CA1 /* Montserrat-Bold.ttf */; };
+		49434D5D1EB3C85500760CA1 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49434D541EB3C85500760CA1 /* Montserrat-ExtraBold.ttf */; };
+		49434D5E1EB3C85500760CA1 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49434D551EB3C85500760CA1 /* Montserrat-ExtraLight.ttf */; };
+		49434D5F1EB3C85500760CA1 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49434D561EB3C85500760CA1 /* Montserrat-Light.ttf */; };
+		49434D601EB3C85500760CA1 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49434D571EB3C85500760CA1 /* Montserrat-Medium.ttf */; };
+		49434D611EB3C85500760CA1 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49434D581EB3C85500760CA1 /* Montserrat-Regular.ttf */; };
+		49434D621EB3C85500760CA1 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49434D591EB3C85500760CA1 /* Montserrat-SemiBold.ttf */; };
+		49434D631EB3C85500760CA1 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49434D5A1EB3C85500760CA1 /* Montserrat-Thin.ttf */; };
+		498D6FED1EB7F42C0079BD19 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D6FEC1EB7F42C0079BD19 /* DetailViewController.swift */; };
+		498D6FF11EB7F6A90079BD19 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D6FF01EB7F6A90079BD19 /* ImageCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		490BBE051EAFEE5D00F37467 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 490BBDE81EAFEE5D00F37467 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 490BBDEF1EAFEE5D00F37467;
+			remoteInfo = ARFoodFinder;
+		};
+		490BBE101EAFEE5D00F37467 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 490BBDE81EAFEE5D00F37467 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 490BBDEF1EAFEE5D00F37467;
+			remoteInfo = ARFoodFinder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4905CA691EAFFC58002CA57F /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		4905CA6B1EAFFEF2002CA57F /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		4905CA6D1EB117BF002CA57F /* PlaceAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
+		4905CA6F1EB12A99002CA57F /* AnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
+		490BBDF01EAFEE5D00F37467 /* ScoutAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScoutAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		490BBDF31EAFEE5D00F37467 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		490BBDF51EAFEE5D00F37467 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		490BBDF81EAFEE5D00F37467 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		490BBDFA1EAFEE5D00F37467 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		490BBDFD1EAFEE5D00F37467 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		490BBDFF1EAFEE5D00F37467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		490BBE041EAFEE5D00F37467 /* ScoutARTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoutARTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		490BBE081EAFEE5D00F37467 /* ScoutARTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoutARTests.swift; sourceTree = "<group>"; };
+		490BBE0A1EAFEE5D00F37467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		490BBE0F1EAFEE5D00F37467 /* ScoutARUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoutARUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		490BBE131EAFEE5D00F37467 /* ScoutARUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoutARUITests.swift; sourceTree = "<group>"; };
+		490BBE151EAFEE5D00F37467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		490BBE231EAFEF6F00F37467 /* ARAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARAnnotation.swift; sourceTree = "<group>"; };
+		490BBE241EAFEF6F00F37467 /* ARAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARAnnotationView.swift; sourceTree = "<group>"; };
+		490BBE251EAFEF6F00F37467 /* ARConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARConfiguration.swift; sourceTree = "<group>"; };
+		490BBE261EAFEF6F00F37467 /* ARTrackingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARTrackingManager.swift; sourceTree = "<group>"; };
+		490BBE271EAFEF6F00F37467 /* ARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		490BBE291EAFEF6F00F37467 /* DebugMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugMapViewController.swift; sourceTree = "<group>"; };
+		490BBE311EAFEF8400F37467 /* DebugMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DebugMapViewController.xib; sourceTree = "<group>"; };
+		490BBE321EAFEF8400F37467 /* hdar_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hdar_close.png; sourceTree = "<group>"; };
+		490BBE331EAFEF8400F37467 /* hdar_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hdar_close@2x.png"; sourceTree = "<group>"; };
+		490BBE341EAFEF8400F37467 /* hdar_close@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hdar_close@3x.png"; sourceTree = "<group>"; };
+		492BAC711EBBEC26003E3390 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		49434D4F1EB2859000760CA1 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		49434D521EB3C85500760CA1 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		49434D531EB3C85500760CA1 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		49434D541EB3C85500760CA1 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		49434D551EB3C85500760CA1 /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		49434D561EB3C85500760CA1 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		49434D571EB3C85500760CA1 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		49434D581EB3C85500760CA1 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		49434D591EB3C85500760CA1 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		49434D5A1EB3C85500760CA1 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		498D6FEC1EB7F42C0079BD19 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		498D6FF01EB7F6A90079BD19 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		490BBDED1EAFEE5D00F37467 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		490BBE011EAFEE5D00F37467 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		490BBE0C1EAFEE5D00F37467 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		490BBDE71EAFEE5D00F37467 = {
+			isa = PBXGroup;
+			children = (
+				490BBDF21EAFEE5D00F37467 /* ScoutAR */,
+				490BBE071EAFEE5D00F37467 /* ScoutARTests */,
+				490BBE121EAFEE5D00F37467 /* ScoutARUITests */,
+				490BBDF11EAFEE5D00F37467 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		490BBDF11EAFEE5D00F37467 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				490BBDF01EAFEE5D00F37467 /* ScoutAR.app */,
+				490BBE041EAFEE5D00F37467 /* ScoutARTests.xctest */,
+				490BBE0F1EAFEE5D00F37467 /* ScoutARUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		490BBDF21EAFEE5D00F37467 /* ScoutAR */ = {
+			isa = PBXGroup;
+			children = (
+				490BBDF31EAFEE5D00F37467 /* AppDelegate.swift */,
+				490BBDF51EAFEE5D00F37467 /* ViewController.swift */,
+				498D6FEC1EB7F42C0079BD19 /* DetailViewController.swift */,
+				49434D4F1EB2859000760CA1 /* WebViewController.swift */,
+				498D6FF01EB7F6A90079BD19 /* ImageCollectionViewCell.swift */,
+				492BAC711EBBEC26003E3390 /* SettingsViewController.swift */,
+				4905CA6F1EB12A99002CA57F /* AnnotationView.swift */,
+				4905CA6D1EB117BF002CA57F /* PlaceAnnotation.swift */,
+				4905CA6B1EAFFEF2002CA57F /* Place.swift */,
+				4905CA691EAFFC58002CA57F /* APIManager.swift */,
+				490BBE211EAFEF3000F37467 /* HDAugmentedReality */,
+				490BBDF71EAFEE5D00F37467 /* Main.storyboard */,
+				490BBDFA1EAFEE5D00F37467 /* Assets.xcassets */,
+				490BBDFC1EAFEE5D00F37467 /* LaunchScreen.storyboard */,
+				490BBDFF1EAFEE5D00F37467 /* Info.plist */,
+				49434D511EB3C81000760CA1 /* Resources */,
+			);
+			path = ScoutAR;
+			sourceTree = "<group>";
+		};
+		490BBE071EAFEE5D00F37467 /* ScoutARTests */ = {
+			isa = PBXGroup;
+			children = (
+				490BBE081EAFEE5D00F37467 /* ScoutARTests.swift */,
+				490BBE0A1EAFEE5D00F37467 /* Info.plist */,
+			);
+			path = ScoutARTests;
+			sourceTree = "<group>";
+		};
+		490BBE121EAFEE5D00F37467 /* ScoutARUITests */ = {
+			isa = PBXGroup;
+			children = (
+				490BBE131EAFEE5D00F37467 /* ScoutARUITests.swift */,
+				490BBE151EAFEE5D00F37467 /* Info.plist */,
+			);
+			path = ScoutARUITests;
+			sourceTree = "<group>";
+		};
+		490BBE211EAFEF3000F37467 /* HDAugmentedReality */ = {
+			isa = PBXGroup;
+			children = (
+				490BBE221EAFEF6F00F37467 /* Classes */,
+			);
+			name = HDAugmentedReality;
+			sourceTree = "<group>";
+		};
+		490BBE221EAFEF6F00F37467 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				490BBE231EAFEF6F00F37467 /* ARAnnotation.swift */,
+				490BBE241EAFEF6F00F37467 /* ARAnnotationView.swift */,
+				490BBE251EAFEF6F00F37467 /* ARConfiguration.swift */,
+				490BBE261EAFEF6F00F37467 /* ARTrackingManager.swift */,
+				490BBE271EAFEF6F00F37467 /* ARViewController.swift */,
+				490BBE281EAFEF6F00F37467 /* Debug */,
+				490BBE301EAFEF8400F37467 /* Resources */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		490BBE281EAFEF6F00F37467 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				490BBE291EAFEF6F00F37467 /* DebugMapViewController.swift */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		490BBE301EAFEF8400F37467 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				490BBE311EAFEF8400F37467 /* DebugMapViewController.xib */,
+				490BBE321EAFEF8400F37467 /* hdar_close.png */,
+				490BBE331EAFEF8400F37467 /* hdar_close@2x.png */,
+				490BBE341EAFEF8400F37467 /* hdar_close@3x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		49434D511EB3C81000760CA1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				49434D521EB3C85500760CA1 /* Montserrat-Black.ttf */,
+				49434D531EB3C85500760CA1 /* Montserrat-Bold.ttf */,
+				49434D541EB3C85500760CA1 /* Montserrat-ExtraBold.ttf */,
+				49434D551EB3C85500760CA1 /* Montserrat-ExtraLight.ttf */,
+				49434D561EB3C85500760CA1 /* Montserrat-Light.ttf */,
+				49434D571EB3C85500760CA1 /* Montserrat-Medium.ttf */,
+				49434D581EB3C85500760CA1 /* Montserrat-Regular.ttf */,
+				49434D591EB3C85500760CA1 /* Montserrat-SemiBold.ttf */,
+				49434D5A1EB3C85500760CA1 /* Montserrat-Thin.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		490BBDEF1EAFEE5D00F37467 /* ScoutAR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 490BBE181EAFEE5D00F37467 /* Build configuration list for PBXNativeTarget "ScoutAR" */;
+			buildPhases = (
+				490BBDEC1EAFEE5D00F37467 /* Sources */,
+				490BBDED1EAFEE5D00F37467 /* Frameworks */,
+				490BBDEE1EAFEE5D00F37467 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScoutAR;
+			productName = ARFoodFinder;
+			productReference = 490BBDF01EAFEE5D00F37467 /* ScoutAR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		490BBE031EAFEE5D00F37467 /* ScoutARTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 490BBE1B1EAFEE5D00F37467 /* Build configuration list for PBXNativeTarget "ScoutARTests" */;
+			buildPhases = (
+				490BBE001EAFEE5D00F37467 /* Sources */,
+				490BBE011EAFEE5D00F37467 /* Frameworks */,
+				490BBE021EAFEE5D00F37467 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				490BBE061EAFEE5D00F37467 /* PBXTargetDependency */,
+			);
+			name = ScoutARTests;
+			productName = ARFoodFinderTests;
+			productReference = 490BBE041EAFEE5D00F37467 /* ScoutARTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		490BBE0E1EAFEE5D00F37467 /* ScoutARUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 490BBE1E1EAFEE5D00F37467 /* Build configuration list for PBXNativeTarget "ScoutARUITests" */;
+			buildPhases = (
+				490BBE0B1EAFEE5D00F37467 /* Sources */,
+				490BBE0C1EAFEE5D00F37467 /* Frameworks */,
+				490BBE0D1EAFEE5D00F37467 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				490BBE111EAFEE5D00F37467 /* PBXTargetDependency */,
+			);
+			name = ScoutARUITests;
+			productName = ARFoodFinderUITests;
+			productReference = 490BBE0F1EAFEE5D00F37467 /* ScoutARUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		490BBDE81EAFEE5D00F37467 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Ellatronic;
+				TargetAttributes = {
+					490BBDEF1EAFEE5D00F37467 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 55GD3S5ST7;
+						ProvisioningStyle = Automatic;
+					};
+					490BBE031EAFEE5D00F37467 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 55GD3S5ST7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 490BBDEF1EAFEE5D00F37467;
+					};
+					490BBE0E1EAFEE5D00F37467 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 55GD3S5ST7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 490BBDEF1EAFEE5D00F37467;
+					};
+				};
+			};
+			buildConfigurationList = 490BBDEB1EAFEE5D00F37467 /* Build configuration list for PBXProject "ScoutAR" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 490BBDE71EAFEE5D00F37467;
+			productRefGroup = 490BBDF11EAFEE5D00F37467 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				490BBDEF1EAFEE5D00F37467 /* ScoutAR */,
+				490BBE031EAFEE5D00F37467 /* ScoutARTests */,
+				490BBE0E1EAFEE5D00F37467 /* ScoutARUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		490BBDEE1EAFEE5D00F37467 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49434D5F1EB3C85500760CA1 /* Montserrat-Light.ttf in Resources */,
+				490BBDFE1EAFEE5D00F37467 /* LaunchScreen.storyboard in Resources */,
+				49434D611EB3C85500760CA1 /* Montserrat-Regular.ttf in Resources */,
+				49434D5B1EB3C85500760CA1 /* Montserrat-Black.ttf in Resources */,
+				490BBE361EAFEF8400F37467 /* hdar_close.png in Resources */,
+				490BBE381EAFEF8400F37467 /* hdar_close@3x.png in Resources */,
+				490BBDFB1EAFEE5D00F37467 /* Assets.xcassets in Resources */,
+				49434D5D1EB3C85500760CA1 /* Montserrat-ExtraBold.ttf in Resources */,
+				49434D5E1EB3C85500760CA1 /* Montserrat-ExtraLight.ttf in Resources */,
+				49434D621EB3C85500760CA1 /* Montserrat-SemiBold.ttf in Resources */,
+				49434D5C1EB3C85500760CA1 /* Montserrat-Bold.ttf in Resources */,
+				490BBDF91EAFEE5D00F37467 /* Main.storyboard in Resources */,
+				49434D601EB3C85500760CA1 /* Montserrat-Medium.ttf in Resources */,
+				490BBE371EAFEF8400F37467 /* hdar_close@2x.png in Resources */,
+				49434D631EB3C85500760CA1 /* Montserrat-Thin.ttf in Resources */,
+				490BBE351EAFEF8400F37467 /* DebugMapViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		490BBE021EAFEE5D00F37467 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		490BBE0D1EAFEE5D00F37467 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		490BBDEC1EAFEE5D00F37467 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				490BBE2E1EAFEF6F00F37467 /* ARViewController.swift in Sources */,
+				4905CA701EB12A99002CA57F /* AnnotationView.swift in Sources */,
+				490BBDF61EAFEE5D00F37467 /* ViewController.swift in Sources */,
+				4905CA6E1EB117BF002CA57F /* PlaceAnnotation.swift in Sources */,
+				490BBE2A1EAFEF6F00F37467 /* ARAnnotation.swift in Sources */,
+				4905CA6A1EAFFC58002CA57F /* APIManager.swift in Sources */,
+				498D6FF11EB7F6A90079BD19 /* ImageCollectionViewCell.swift in Sources */,
+				492BAC721EBBEC26003E3390 /* SettingsViewController.swift in Sources */,
+				490BBE2F1EAFEF6F00F37467 /* DebugMapViewController.swift in Sources */,
+				490BBE2B1EAFEF6F00F37467 /* ARAnnotationView.swift in Sources */,
+				490BBE2D1EAFEF6F00F37467 /* ARTrackingManager.swift in Sources */,
+				490BBE2C1EAFEF6F00F37467 /* ARConfiguration.swift in Sources */,
+				490BBDF41EAFEE5D00F37467 /* AppDelegate.swift in Sources */,
+				49434D501EB2859000760CA1 /* WebViewController.swift in Sources */,
+				4905CA6C1EAFFEF2002CA57F /* Place.swift in Sources */,
+				498D6FED1EB7F42C0079BD19 /* DetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		490BBE001EAFEE5D00F37467 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				490BBE091EAFEE5D00F37467 /* ScoutARTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		490BBE0B1EAFEE5D00F37467 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				490BBE141EAFEE5D00F37467 /* ScoutARUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		490BBE061EAFEE5D00F37467 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 490BBDEF1EAFEE5D00F37467 /* ScoutAR */;
+			targetProxy = 490BBE051EAFEE5D00F37467 /* PBXContainerItemProxy */;
+		};
+		490BBE111EAFEE5D00F37467 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 490BBDEF1EAFEE5D00F37467 /* ScoutAR */;
+			targetProxy = 490BBE101EAFEE5D00F37467 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		490BBDF71EAFEE5D00F37467 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				490BBDF81EAFEE5D00F37467 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		490BBDFC1EAFEE5D00F37467 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				490BBDFD1EAFEE5D00F37467 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		490BBE161EAFEE5D00F37467 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				"INFOPLIST_FILE[sdk=*]" = /Users/ella/Desktop/ScoutAR/ScoutAR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		490BBE171EAFEE5D00F37467 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				"INFOPLIST_FILE[sdk=*]" = /Users/ella/Desktop/ScoutAR/ScoutAR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		490BBE191EAFEE5D00F37467 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 55GD3S5ST7;
+				INFOPLIST_FILE = ScoutAR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ellatronic.ScoutAR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		490BBE1A1EAFEE5D00F37467 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 55GD3S5ST7;
+				INFOPLIST_FILE = ScoutAR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ellatronic.ScoutAR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		490BBE1C1EAFEE5D00F37467 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 55GD3S5ST7;
+				INFOPLIST_FILE = ScoutARTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ellatronic.ScoutARTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScoutAR.app/ScoutAR";
+			};
+			name = Debug;
+		};
+		490BBE1D1EAFEE5D00F37467 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 55GD3S5ST7;
+				INFOPLIST_FILE = ScoutARTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ellatronic.ScoutARTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScoutAR.app/ScoutAR";
+			};
+			name = Release;
+		};
+		490BBE1F1EAFEE5D00F37467 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 55GD3S5ST7;
+				INFOPLIST_FILE = ScoutARUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ellatronic.ScoutARUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ScoutAR;
+			};
+			name = Debug;
+		};
+		490BBE201EAFEE5D00F37467 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 55GD3S5ST7;
+				INFOPLIST_FILE = ScoutARUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ellatronic.ScoutARUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ScoutAR;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		490BBDEB1EAFEE5D00F37467 /* Build configuration list for PBXProject "ScoutAR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				490BBE161EAFEE5D00F37467 /* Debug */,
+				490BBE171EAFEE5D00F37467 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		490BBE181EAFEE5D00F37467 /* Build configuration list for PBXNativeTarget "ScoutAR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				490BBE191EAFEE5D00F37467 /* Debug */,
+				490BBE1A1EAFEE5D00F37467 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		490BBE1B1EAFEE5D00F37467 /* Build configuration list for PBXNativeTarget "ScoutARTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				490BBE1C1EAFEE5D00F37467 /* Debug */,
+				490BBE1D1EAFEE5D00F37467 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		490BBE1E1EAFEE5D00F37467 /* Build configuration list for PBXNativeTarget "ScoutARUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				490BBE1F1EAFEE5D00F37467 /* Debug */,
+				490BBE201EAFEE5D00F37467 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 490BBDE81EAFEE5D00F37467 /* Project object */;
+}
