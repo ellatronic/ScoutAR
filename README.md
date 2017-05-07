@@ -27,3 +27,5 @@ Augmented reality app displays nearby restaurant information in a live camera an
 #### Foursquare Web View
 
 ![Foursquare Web View](ReadMeImages/FourSquare.png)
+
+See the original repo here: [https://github.com/ellatronic/ARFoodFinder](https://github.com/ellatronic/ARFoodFinder).
