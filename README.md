@@ -12,14 +12,18 @@ Augmented reality app displays nearby restaurant information in a live camera an
 * Annotations may overlap one another if the restaurant name is very long.
 
 ### Screenshots
-#### App Home Screen
+#### Map View
 
-![App Home Screen](readmeImages/NewsAppHomeScreen.png)
+![Map View](ReadMeImages/MapView.png)
 
-#### App Article Screen
+#### Augmented Reality View
 
-![App Article Screen](readmeImages/NewsAppArticleScreen.png)
+![Augmented Reality View](ReadMeImages/CameraView.png)
 
-#### Notification
+#### Restaurant Detail View
 
-![Notification Permissions](readmeImages/NewsAppNotification.png)
+![Restaurant Detail View](ReadMeImages/DetailView.png)
+
+#### Foursquare Web View
+
+![Foursquare Web View](ReadMeImages/FourSquare.png)
