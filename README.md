@@ -1,6 +1,6 @@
 # ScoutAR
 Augmented reality app displays nearby restaurant information in a live camera and map view.
-###### Download from the [App Store](https://itunes.apple.com/us/app/scout-ar/id1233445898?mt=8).
+##### Download from the [App Store](https://itunes.apple.com/us/app/scout-ar/id1233445898?mt=8).
 
 ## Features
 * The user can view nearby restaurants on a map view.
