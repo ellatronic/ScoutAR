@@ -4,8 +4,8 @@ Augmented reality app displays nearby restaurant information in a live camera an
 
 ## Features
 * The user can view nearby restaurants on a map view.
-* Click the camera button to be taken to the augmented reality view where the user can use their camera to display annotations with restaurant information.
-* Ability click an annotation to segue to a page with restaurant details.
+* Tap the camera button to be taken to the augmented reality view where the user can use their camera to display annotations with restaurant information. Move the phone around until facing the direction of a venue for the annotation to appear on the screen.
+* Tap an annotation to segue to a page with restaurant details.
 * See further details on Foursquare's website via a web view.
 
 ### Issues
